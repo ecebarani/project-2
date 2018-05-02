@@ -1,0 +1,39 @@
+<div class="container" ng-controller="UserController">
+  <h1 class="well"><center><font face="Monotype Corsiva">Registration Form</font></center></h1>
+  <div class="col-lg-12 well">
+  <div class="row">
+    <form>
+      <div class="col-sm-12">
+       <div class="row">
+        <div class="col-sm-6 form-group">
+         <label>Designation</label>
+         <input type="text" name="designation" ng-model="job.designation" placeholder="Enter Designation Here.." class="form-control">
+        </div>
+        <div class="col-sm-6 form-group">
+         <label>Company</label>
+         <input type="text" name="company" ng-model="job.company" placeholder="Enter Company Name Here.." class="form-control">
+        </div>
+       </div>
+       <div class="form-group">
+         <label>Job Description</label>
+         <textarea name="jobDesc" ng-model="job.jobDesc" placeholder="Enter Job Description Here.." rows="3" class="form-control">
+        </div>
+        <div class="form-group">
+         <label>Salary</label>
+         <input type="text" name="salary" ng-model="job.salary" placeholder="Enter YourSalary Here.." class="form-control">
+        </div>
+        <div class="form-group">
+         <label>Location</label>
+         <input type="text" name="location" ng-model="job.location" placeholder="Enter Location Here.." class="form-control">
+        </div>
+        <div class="form-group">
+         <label>Last Date For Apply</label>
+         <input type="date" name="" ng-model="job.lastDateApply" placeholder="Enter Last Date of Apply Here.." class="form-control">
+        </div>
+      <button type="button" ng-click="publishJob()" class="btn btn-lg btn-info">Publish Job</button>
+      </div>
+    </form>
+   </div>
+  </div>
+</div>
+        

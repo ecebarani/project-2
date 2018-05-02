@@ -1,0 +1,24 @@
+<div class="container" ng-controller="UserController">
+  <h1 class="well"><center><font face="Monotype Corsiva">Enter Blog</font></center></h1>
+  <div class="col-lg-12 well">
+  <div class="row">
+    <form>
+      <div class="col-sm-12">
+       <div class="row">
+        <div class="col-sm-12 form-group">
+         <label>Blog Name</label>
+         <input type="text" name="blogName" ng-model="blog.blogName" placeholder="Enter User Name Here" class="form-control">
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-sm-12 form-group">
+         <label>Blog Content</label>
+         <textarea rows="20" name="blogContent" ng-model="blog.blogcontent" placeholder="Enter password Here.." class="form-control"></textarea>
+       </div>
+       <center><input type="submit" value="ADD BLOG" class="btn btn-lg btn-info" ng-click="addBlog()"/></center>
+     </div>
+    </div>
+   </form>
+  </div>
+ </div>
+</div> 

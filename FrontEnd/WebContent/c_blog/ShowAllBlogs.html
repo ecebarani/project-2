@@ -1,0 +1,29 @@
+<div class="container" ng-controller="BlogController">
+
+<table class="table">
+	<tr>
+		<td> Blog Name </td>
+		<td> Blog content </td>
+	</tr>
+	<tr ng-repeat="blog in allBlogdata">
+		<td>{{blog.blogName}}</td>
+		<td>{{blog.blogContent}}</td>
+	</tr>
+</table>
+
+<div class="panel-group" id="accordian">
+	<div class="panel panel-default">
+	<div class="panel-heading" ng-repeat="blog in allBlogdata">
+	<h4 class="panel-title">{{blog.likes}}<input type="button" ng-click="incrementLike({{blog.blogId}})" value='Like' class="btn btn-info"/>
+	<a data-toggle="collapse" data-parent="#accordian" href="#collapse1">{{blog.blogName}}</a>
+	</h4>
+	</div>
+	<div id="collapse1" class="panel-collapse collapse in">
+	<div class="panel-body">
+	{{blog.blogContent}}
+	</div>
+	</div>
+	</div>
+	</div>
+	
+</div>

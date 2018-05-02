@@ -1,0 +1,23 @@
+<div class="container" ng-controller="BlogController">
+
+<table class="table">
+	
+	<tr>
+		<td> Blog Name </td>
+		<td> Blog Content </td>
+		<td colspan="2"> Operation </td>
+	</tr>
+	<tr ng-repeat="blog in blogdata">
+		<td>{{blog.blogName}}</td>
+		<td>{{blog.blogContent}}</td>
+		<td ng-hide="blog.status=='A'">
+			<input type="button" value="Approve" ng-click="approve()" class="btn btn-info"/>
+		</td>
+		<td ng-hide="blog.status=='P'">
+			<input type="button" value="Reject" ng-click="reject()" class="btn btn-danger"/>
+		</td>
+	</tr>
+	
+</table>
+
+</div>

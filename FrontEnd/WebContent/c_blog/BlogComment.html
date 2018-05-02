@@ -1,0 +1,21 @@
+<div class="container" ng-controller="BlogController">
+
+<table class="table">
+
+<tr ng-repeat="comment in blogcommentdata">
+	<td>
+	<div>{{comment.commentText}}<br/>
+	{{comment.commentDate}}-{{comment.loginname}}
+	</div>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<textarea clos="20" rows="30"></textarea>
+	<input type="button" value="comment" ng-click="addComment()" class="btn btn-info"/>
+	</td>
+</tr>
+
+</table>
+</div>

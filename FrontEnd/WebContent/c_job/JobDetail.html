@@ -1,0 +1,25 @@
+<div class="container" ng-controller="JobController">
+<table class="table">
+<tr>
+	<td>Designation</td>
+	<td>Company</td>
+	<td>Salary</td>
+	<td>Location</td>
+	<td>Last Date Apply</td>
+	<td>Operation</td>
+</tr>
+
+<tr ng-repeat="job in all JobData">
+	<td>{{job.jobDesignation}}</td>
+	<td>{{job.company}}</td>
+	<td>{{job.salary}}</td>
+	<td>{{job.location}}</td>
+	<td>{{job.lastDateApply}}</td>
+	<td>
+		<input ng-show="currentUser.role=='ROLE_USER'" type="button" ng-click="applyJob(job.jobId)"
+		<input ng-show="currentUser.role=='ROLE_ADMIN'" type="button" ng-click="DeleteJob(job.jobId)"
+	</td>
+</tr>
+
+</table>
+</div>

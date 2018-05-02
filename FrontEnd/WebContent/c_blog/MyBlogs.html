@@ -1,0 +1,18 @@
+<div class="container" ng-controller="BlogController">
+
+<table class="table">
+
+	<tr>
+		<td> Blog Name </td>
+		<td> Blog Content </td>
+	</tr>
+	<tr ng-repeat="blog in allBlogdata">
+		<td ng-show="blog.loginname==currentUser.loginname">{{blog.blogName}}</td>
+		<td ng-show="blog.loginname==currentUser.loginname">{{blog.blogContent}}</td>
+		<td ng-show="blog.loginname==currentUser.loginname">{{blog.status}}</td>
+		<td ng-show="blog.loginname==currentUser.loginname"><input type="button" value="Delete Blog"
+	</tr>
+	
+</table>
+
+</div>
